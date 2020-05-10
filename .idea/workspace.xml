@@ -13,7 +13,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/clinique_management/CliniqueManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/clinique_management/CliniqueManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/clinique_management/CliniqueManagement.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/clinique_management/CliniqueManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clinique_management/CliniqueManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ICliniqueManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ICliniqueManagementService.java" afterDir="false" />
     </list>
@@ -64,6 +64,7 @@
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.clinique_management" />
       <recent name="com.bridgelabz.utility" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -86,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CliniqueManagementTest">
+  <component name="RunManager" selected="Gradle.CliniqueManagementTest.givenFile_whenAddDoctorDelail_shouldReturnTrue">
     <configuration name="CliniqueManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.clinique_management.CliniqueManagement" />
       <module name="untitled.main" />
@@ -142,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CliniqueManagementTest" />
         <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenAddDoctorDelail_shouldReturnTrue" />
+        <item itemvalue="Gradle.CliniqueManagementTest" />
         <item itemvalue="Application.CliniqueManagement" />
       </list>
     </recent_temporary>
@@ -171,16 +172,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/CliniqueManagementTest.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
