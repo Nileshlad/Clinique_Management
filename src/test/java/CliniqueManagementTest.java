@@ -118,4 +118,30 @@ public class CliniqueManagementTest {
         boolean isDoctorId = cliniqueManagement.searchDoctorById(doctorId, doctorfilePath);
         Assert.assertFalse(isDoctorId);
     }
+
+    //TEST CASE 1.7
+    @Test
+    public void givenFile_whenSearchDoctorBySpecialization_shouldReturnTrue() {
+        try {
+            String doctorSpecialist = "Dentist";
+            boolean isDoctorSpecialist = cliniqueManagement.searchDoctorBySpecialization(doctorSpecialist, doctorfilePath);
+            Assert.assertTrue(isDoctorSpecialist);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+
+    }
+    //TEST CASE 1.7
+    @Test
+    public void givenFile_whenSearchDoctorBySpecialization_shouldReturnFlase() {
+        try {
+            String doctorSpecialist = "Dentist123";
+            boolean isDoctorSpecialist = cliniqueManagement.searchDoctorBySpecialization(doctorSpecialist, doctorfilePath);
+            Assert.assertFalse(isDoctorSpecialist);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }
