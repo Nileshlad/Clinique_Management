@@ -144,4 +144,29 @@ public class CliniqueManagementTest {
 
     }
 
+    //TEST CASE 1.8
+    @Test
+    public void givenFile_whenSearchDoctorByAvailability_shouldReturnTrue() {
+        try {
+            String doctorAvailability = "12pm";
+            boolean isDoctorAvailability = cliniqueManagement.searchDoctorByAvailability(doctorAvailability, doctorfilePath);
+            Assert.assertTrue(isDoctorAvailability);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
+
+    }
+    //TEST CASE 1.9
+    @Test
+    public void givenFile_whenSearchDoctorByAvailability_shouldReturnFlase() {
+        try {
+            String doctorAvailability = "152pm";
+            boolean isDoctorAvailability = cliniqueManagement.searchDoctorByAvailability(doctorAvailability, doctorfilePath);
+            Assert.assertFalse(isDoctorAvailability);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
+
+    }
+
 }

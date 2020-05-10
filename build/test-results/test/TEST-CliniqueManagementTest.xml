@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CliniqueManagementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-10T10:27:52" hostname="blackhawkkk" time="0.461">
+<testsuite name="CliniqueManagementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-10T10:32:37" hostname="blackhawkkk" time="0.442">
   <properties/>
-  <testcase name="givenFile_whenSearchDoctorBySpecialization_shouldReturnFlase" classname="CliniqueManagementTest" time="0.461"/>
+  <testcase name="givenFile_whenSearchDoctorByAvailability_shouldReturnFlase" classname="CliniqueManagementTest" time="0.442"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[java.lang.NullPointerException
-	at com.clinique_management.CliniqueManagement.searchDoctorBySpecialization(CliniqueManagement.java:62)
-	at CliniqueManagementTest.givenFile_whenSearchDoctorBySpecialization_shouldReturnFlase(CliniqueManagementTest.java:139)
+	at com.clinique_management.CliniqueManagement.searchDoctorByAvailability(CliniqueManagement.java:77)
+	at CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase(CliniqueManagementTest.java:164)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
