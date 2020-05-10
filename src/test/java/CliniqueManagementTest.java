@@ -169,7 +169,7 @@ public class CliniqueManagementTest {
 
     }
 
-    //TEST CASE 1.10
+    //TEST CASE 1.11
     @Test
     public void givenFile_whenSearchPatientByName_shouldReturnTrue() {
         try {
@@ -191,5 +191,21 @@ public class CliniqueManagementTest {
         }catch (NullPointerException e){
             e.printStackTrace();
         }
+    }
+
+    //TEST CASE 1.13
+    @Test
+    public void givenFile_whenSearchPatientById_shouldReturnTrue() {
+        int id = 2;
+        boolean isId = cliniqueManagement.searchPatientById(id, patientfilePath);
+        Assert.assertTrue(isId);
+    }
+
+    //TEST CASE 1.14
+    @Test
+    public void givenFile_whenSearchPatientById_shouldReturnFlase() {
+        int id = 20;
+        boolean isId = cliniqueManagement.searchPatientById(id, patientfilePath);
+        Assert.assertFalse(isId);
     }
 }
