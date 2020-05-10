@@ -89,19 +89,27 @@ public class CliniqueManagementTest {
     //TEST CASE 1.3
     @Test
     public void givenFile_whenSearchDoctorByName_shouldReturnTrue() {
-        String doctorName = "Nilesh lad";
-        boolean isDoctorName = cliniqueManagement.searchDoctorByName(doctorName, doctorfilePath);
-        Assert.assertTrue(isDoctorName);
+       try {
+           String doctorName = "Nilesh lad";
+           boolean isDoctorName = cliniqueManagement.searchDoctorByName(doctorName, doctorfilePath);
+           Assert.assertTrue(isDoctorName);
+       }catch (NullPointerException e){
+           e.printStackTrace();
+       }
+
     }
 
     //TEST CASE 1.4
     @Test
     public void givenFile_whenSearchDoctorByName_shouldReturnFlase() {
-        String doctorName = "Nil lad";
-        boolean isDoctorName = cliniqueManagement.searchDoctorByName(doctorName, doctorfilePath);
-        Assert.assertFalse(isDoctorName);
+       try {
+           String doctorName = "Nil lad";
+           boolean isDoctorName = cliniqueManagement.searchDoctorByName(doctorName, doctorfilePath);
+           Assert.assertFalse(isDoctorName);
+       }catch (NullPointerException e){
+           e.printStackTrace();
+       }
     }
-
 
     //TEST CASE 1.5
     @Test
@@ -207,5 +215,21 @@ public class CliniqueManagementTest {
         int id = 20;
         boolean isId = cliniqueManagement.searchPatientById(id, patientfilePath);
         Assert.assertFalse(isId);
+    }
+
+    //TEST CASE 1.15
+    @Test
+    public void givenFile_whenSearchPatientByMobileNumber_shouldReturnTrue() {
+        long mobileNumber = 9566116980L;
+        boolean isPatientName = cliniqueManagement.searchPatientByMobileNumber(mobileNumber, patientfilePath);
+        Assert.assertTrue(isPatientName);
+    }
+
+    //TEST CASE 1.16
+    @Test
+    public void givenFile_whenSearchPatientByMobileNumber_shouldReturnFalse() {
+        long mobileNumber = 919566116980L;
+        boolean isPatientName = cliniqueManagement.searchPatientByMobileNumber(mobileNumber, patientfilePath);
+        Assert.assertFalse(isPatientName);
     }
 }

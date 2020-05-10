@@ -10,12 +10,13 @@ import java.util.ArrayList;
 
 public class CliniqueManagement implements ICliniqueManagementService {
 
+   //object
     FileSystem fileSystem = new FileSystem();
 
+    //add information in patient and doctor
     @Override
-    public  <E> void addInformation(E data, String filePath) {
+    public <E> void addInformation(E data, String filePath) {
         try {
-            FileSystem fileSystem = new FileSystem();
             ArrayList<E> readData = fileSystem.readFile(filePath);
             readData.add(data);
             fileSystem.writeFile(readData, filePath);
@@ -24,7 +25,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
         }
     }
 
-
+    //search information in  doctor name
     @Override
     public boolean searchDoctorByName(String doctorName, String filePath) {
         try {
@@ -39,6 +40,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
         return false;
     }
 
+    // search information in doctor id
     @Override
     public boolean searchDoctorById(int doctorId, String doctorfilePath) {
         try {
@@ -54,6 +56,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
         return false;
     }
 
+    //search information in doctor specialization
     @Override
     public boolean searchDoctorBySpecialization(String doctorSpecialist, String doctorfilePath) {
         try {
@@ -69,6 +72,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
         return false;
     }
 
+    //search doctor by  availability
     @Override
     public boolean searchDoctorByAvailability(String doctorAvailability, String doctorfilePath) {
         try {
@@ -84,6 +88,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
         return false;
     }
 
+    //search Patient By Name
     @Override
     public boolean searchPatientByName(String patientName, String patientFilePath) {
         try {
@@ -99,6 +104,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
         return false;
     }
 
+    //search Patient By Mobile Number
     public boolean searchPatientByMobileNumber(long mobileNumber, String patientfilePath) {
         try {
             ArrayList<Patient> readData = fileSystem.readPatientFile(patientfilePath);

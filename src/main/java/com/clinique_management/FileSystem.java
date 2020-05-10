@@ -23,12 +23,12 @@ public class FileSystem {
         objectMapper.writeValue(new File(filePath), list);
     }
 
-    public  ArrayList<Doctor> readDoctorFile(String filePath) throws IOException {
+    public ArrayList<Doctor> readDoctorFile(String filePath) throws IOException {
         return objectMapper.readValue(new File(filePath), new TypeReference<ArrayList<Doctor>>() {
         });
     }
 
-    public  ArrayList<Patient> readPatientFile(String filePath) throws IOException {
+    public ArrayList<Patient> readPatientFile(String filePath) throws IOException {
         return objectMapper.readValue(new File(filePath), new TypeReference<ArrayList<Patient>>() {
         });
     }

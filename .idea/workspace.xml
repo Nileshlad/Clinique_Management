@@ -18,10 +18,12 @@
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/Doctor.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Doctor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/Patient.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Patient.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CliniqueManagementTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CliniqueManagementTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/clinique_management/CliniqueManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clinique_management/CliniqueManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Doctor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Doctor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Patient.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Patient.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CliniqueManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CliniqueManagementTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,13 +100,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnTrue">
-    <configuration name="CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFalse">
+    <configuration name="CliniqueManagementTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -119,12 +121,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CliniqueManagementTest.givenFile_whenAddDoctorDelail_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenAddDoctorDelail_shouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -139,12 +141,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CliniqueManagementTest.givenFile_whenSearchDoctorByName_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchDoctorByName_shouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -159,12 +161,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnFlase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFalse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnFlase&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFalse&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -179,12 +181,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFlase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue&quot;" />
+        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFlase&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -201,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnTrue" />
-        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnFlase" />
-        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue" />
-        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase" />
-        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnTrue" />
+        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFalse" />
+        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenAddDoctorDelail_shouldReturnTrue" />
+        <item itemvalue="Gradle.CliniqueManagementTest" />
+        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorByName_shouldReturnTrue" />
+        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByMobileNumber_shouldReturnFlase" />
       </list>
     </recent_temporary>
   </component>
