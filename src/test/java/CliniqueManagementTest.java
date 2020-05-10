@@ -17,11 +17,13 @@ public class CliniqueManagementTest {
     public static final String doctorfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Doctor.json";
     public static final String patientfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Patient.json";
 
+    CliniqueManagement cliniqueManagement;
     FileSystem fileSystem;
     ObjectMapper objectMapper;
 
     @Before
     public void setUp() {
+        cliniqueManagement = new CliniqueManagement();
         fileSystem = new FileSystem();
         objectMapper = new ObjectMapper();
 
@@ -37,11 +39,11 @@ public class CliniqueManagementTest {
             Doctor doctor4 = new Doctor("Akshay pawar", 4444, "Orthopaedics", "6pm");
             Doctor doctor5 = new Doctor("kunal patil", 1112, "Surgery", "9pm");
 
-            CliniqueManagement.addInformation(doctor1, doctorfilePath);
-            CliniqueManagement.addInformation(doctor2, doctorfilePath);
-            CliniqueManagement.addInformation(doctor3, doctorfilePath);
-            CliniqueManagement.addInformation(doctor4, doctorfilePath);
-            CliniqueManagement.addInformation(doctor5, doctorfilePath);
+            cliniqueManagement.addInformation(doctor1, doctorfilePath);
+            cliniqueManagement.addInformation(doctor2, doctorfilePath);
+            cliniqueManagement.addInformation(doctor3, doctorfilePath);
+            cliniqueManagement.addInformation(doctor4, doctorfilePath);
+            cliniqueManagement.addInformation(doctor5, doctorfilePath);
             ArrayList<Doctor> data = objectMapper
                     .readValue(new File(doctorfilePath), new TypeReference<ArrayList<Doctor>>() {
                     });
@@ -64,11 +66,12 @@ public class CliniqueManagementTest {
             Patient patient3 = new Patient("PAWAN RAJUL", 3, 4545454545L, 43);
             Patient patient4 = new Patient("NANDU AABA", 4, 1010101010L, 55);
             Patient patient5 = new Patient("ANSAR SHEKH", 5, 5858585860L, 93);
-            CliniqueManagement.addInformation(patient1, patientfilePath);
-            CliniqueManagement.addInformation(patient2, patientfilePath);
-            CliniqueManagement.addInformation(patient3, patientfilePath);
-            CliniqueManagement.addInformation(patient4, patientfilePath);
-            CliniqueManagement.addInformation(patient5, patientfilePath);
+
+            cliniqueManagement.addInformation(patient1, patientfilePath);
+            cliniqueManagement.addInformation(patient2, patientfilePath);
+            cliniqueManagement.addInformation(patient3, patientfilePath);
+            cliniqueManagement.addInformation(patient4, patientfilePath);
+            cliniqueManagement.addInformation(patient5, patientfilePath);
 
             ArrayList<Patient> data = objectMapper
                     .readValue(new File(patientfilePath), new TypeReference<ArrayList<Patient>>() {
@@ -82,4 +85,22 @@ public class CliniqueManagementTest {
             e.printStackTrace();
         }
     }
+
+    //TEST CASE 1.3
+    @Test
+    public void givenFile_whenSearchDoctorByName_shouldReturnTrue() {
+        String doctorName = "Nilesh lad";
+        boolean isDoctorName = cliniqueManagement.searchDoctorByName(doctorName, doctorfilePath);
+        Assert.assertTrue(isDoctorName);
+    }
+
+    //TEST CASE 1.4
+    @Test
+    public void givenFile_whenSearchDoctorByName_shouldReturnFlase() {
+        String doctorName = "Nil lad";
+        boolean isDoctorName = cliniqueManagement.searchDoctorByName(doctorName, doctorfilePath);
+        Assert.assertFalse(isDoctorName);
+    }
+
+
 }

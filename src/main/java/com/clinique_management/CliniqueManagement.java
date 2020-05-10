@@ -13,8 +13,9 @@ public class CliniqueManagement implements ICliniqueManagementService {
     FileSystem fileSystem = new FileSystem();
 
     @Override
-    public static <E> void addInformation(E data, String filePath) {
+    public  <E> void addInformation(E data, String filePath) {
         try {
+            FileSystem fileSystem = new FileSystem();
             ArrayList<E> readData = fileSystem.readFile(filePath);
             readData.add(data);
             fileSystem.writeFile(readData, filePath);
@@ -22,6 +23,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
             e.printStackTrace();
         }
     }
+
 
     @Override
     public boolean searchDoctorByName(String doctorName, String filePath) {
