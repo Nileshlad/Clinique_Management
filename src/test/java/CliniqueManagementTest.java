@@ -169,4 +169,27 @@ public class CliniqueManagementTest {
 
     }
 
+    //TEST CASE 1.10
+    @Test
+    public void givenFile_whenSearchPatientByName_shouldReturnTrue() {
+        try {
+            String patientName = "KUMAR PATIL";
+            boolean isPatientName = cliniqueManagement.searchPatientByName(patientName, patientfilePath);
+            Assert.assertTrue(isPatientName);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
+    }
+
+    //TEST CASE 1.12
+    @Test
+    public void givenFile_whenSearchPatientByName_shouldReturnFlase() {
+        try {
+            String patientName = "KUMARPATIL";
+            boolean isPatientName = cliniqueManagement.searchPatientByName(patientName, patientfilePath);
+            Assert.assertFalse(isPatientName);
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
+    }
 }

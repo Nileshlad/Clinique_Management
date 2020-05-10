@@ -95,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase">
+  <component name="RunManager" selected="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue">
     <configuration name="CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -122,26 +122,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnTrue&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CliniqueManagementTest.givenFile_whenSearchDoctorById_shouldReturnFlase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchDoctorById_shouldReturnFlase&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -196,13 +176,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchPatientByName_shouldReturnTrue" />
         <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnFlase" />
         <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorByAvailability_shouldReturnTrue" />
         <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorBySpecialization_shouldReturnFlase" />
         <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorBySpecialization_shouldReturnTrue" />
-        <item itemvalue="Gradle.CliniqueManagementTest.givenFile_whenSearchDoctorById_shouldReturnFlase" />
       </list>
     </recent_temporary>
   </component>
