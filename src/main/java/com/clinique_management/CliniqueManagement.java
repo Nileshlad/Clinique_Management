@@ -132,4 +132,17 @@ public class CliniqueManagement implements ICliniqueManagementService {
         }
         return false;
     }
+
+    //
+    @Override
+    public boolean viewReport(Patient patient, String patientFilePath) throws IOException {
+        ArrayList<Patient> patientArrayList = fileSystem.readFile(patientFilePath);
+        for (Patient patient1 : patientArrayList) {
+            if (patient1.getName().equalsIgnoreCase(patient.getName()))
+            {
+                                return true;
+            }
+        }
+        return false;
+    }
 }

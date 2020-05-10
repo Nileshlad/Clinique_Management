@@ -1,0 +1,22 @@
+[
+  {
+    "doctorName": "Nilesh lad",
+    "patientName": "kunal patil",
+    "schedule": "10am"
+  },
+  {
+    "doctorName": "vaibhav mali",
+    "patientName": "shankar khare",
+    "schedule": "8am"
+  },
+  {
+    "doctorName": "raju pawar",
+    "patientName": "kushal lad",
+    "schedule": "12pm"
+  },
+  {
+    "doctorName": "Akshay pawar",
+    "patientName": "pawan patil",
+    "schedule": "6pm"
+  }
+]

@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22079da5-49a8-42dd-b28e-be02c1a574f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/model/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Appointmnet.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CliniqueManagementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/CliniqueManagementTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CliniqueManagementTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CliniqueManagementTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Doctor.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Doctor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Patient.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Patient.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CliniqueManagementTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CliniqueManagementTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/clinique_management/CliniqueManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clinique_management/CliniqueManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Doctor.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Doctor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Patient.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Patient.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/ICliniqueManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/ICliniqueManagementService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CliniqueManagementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CliniqueManagementTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +62,9 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.bridgelabz.utility" />
       <recent name="com.clinique_management" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.clinique_management" />

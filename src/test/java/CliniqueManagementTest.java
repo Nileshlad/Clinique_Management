@@ -1,5 +1,6 @@
 import com.clinique_management.CliniqueManagement;
 import com.clinique_management.FileSystem;
+import com.model.Appointment;
 import com.model.Doctor;
 import com.model.Patient;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -16,6 +17,7 @@ public class CliniqueManagementTest {
 
     public static final String doctorfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Doctor.json";
     public static final String patientfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Patient.json";
+    public static final String AppointmnetpatientfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Appointmnet.json";
 
     CliniqueManagement cliniqueManagement;
     FileSystem fileSystem;
@@ -232,4 +234,30 @@ public class CliniqueManagementTest {
         boolean isPatientName = cliniqueManagement.searchPatientByMobileNumber(mobileNumber, patientfilePath);
         Assert.assertFalse(isPatientName);
     }
+
+    //TEST CASE 1.18
+    @Test
+    public void givenFile_whenAppointmentDelail_shouldReturnTrue() {
+        try {
+            Appointment appointment1 = new Appointment("Nilesh lad","kunal patil","10am");
+            Appointment appointment2 = new Appointment("vaibhav mali", "shankar khare", "8am");
+            Appointment appointment3 = new Appointment("raju pawar", "kushal lad", "12pm");
+            Appointment appointment4 = new Appointment("Akshay pawar","pawan patil", "6pm");
+
+            cliniqueManagement.addInformation(appointment1, doctorfilePath);
+            cliniqueManagement.addInformation(appointment2, doctorfilePath);
+            cliniqueManagement.addInformation(appointment3, doctorfilePath);
+            cliniqueManagement.addInformation(appointment4, doctorfilePath);
+            ArrayList<Doctor> data = objectMapper
+                    .readValue(new File(AppointmnetpatientfilePath), new TypeReference<ArrayList<Doctor>>() {
+                    });
+            Assert.assertEquals(appointment1.getDoctorName(), data.get(0).getName());
+            Assert.assertEquals(appointment2.getDoctorName(), data.get(1).getName());
+            Assert.assertEquals(appointment3.getDoctorName(), data.get(2).getName());
+            Assert.assertEquals(appointment4.getDoctorName(), data.get(3).getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
