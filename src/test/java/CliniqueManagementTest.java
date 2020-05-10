@@ -103,4 +103,19 @@ public class CliniqueManagementTest {
     }
 
 
+    //TEST CASE 1.5
+    @Test
+    public void givenFile_whenSearchDoctorById_shouldReturnTrue() {
+        int doctorId = 1111;
+        boolean isDoctorId = cliniqueManagement.searchDoctorById(doctorId, doctorfilePath);
+        Assert.assertTrue(isDoctorId);
+    }
+
+    //TEST CASE 1.6
+    @Test
+    public void givenFile_whenSearchDoctorById_shouldReturnFlase() {
+        int doctorId = 11111;
+        boolean isDoctorId = cliniqueManagement.searchDoctorById(doctorId, doctorfilePath);
+        Assert.assertFalse(isDoctorId);
+    }
 }
