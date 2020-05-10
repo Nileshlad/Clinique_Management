@@ -2,7 +2,9 @@ package com.service;
 
 public interface ICliniqueManagementService {
 
-    public <E> void addInformation(E data, String filePath);
+
+   public boolean<E> void addInformation(E data, String filePath);
+
     /**
      * This method is used to add data
      * into json file.
