@@ -13,7 +13,7 @@ public class CliniqueManagement implements ICliniqueManagementService {
     FileSystem fileSystem = new FileSystem();
 
     @Override
-    public <E> void addInformation(E data, String filePath) {
+    public static <E> void addInformation(E data, String filePath) {
         try {
             ArrayList<E> readData = fileSystem.readFile(filePath);
             readData.add(data);

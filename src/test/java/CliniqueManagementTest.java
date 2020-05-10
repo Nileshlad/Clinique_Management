@@ -1,6 +1,7 @@
 import com.clinique_management.CliniqueManagement;
 import com.clinique_management.FileSystem;
 import com.model.Doctor;
+import com.model.Patient;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
 import org.junit.Assert;
@@ -14,6 +15,8 @@ import java.util.ArrayList;
 public class CliniqueManagementTest {
 
     public static final String doctorfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Doctor.json";
+    public static final String patientfilePath = "C:\\Users\\Blackhawkkk1\\IdeaProjects\\Clinique_Management\\src\\main\\resources\\Patient.json";
+
     FileSystem fileSystem;
     ObjectMapper objectMapper;
 
@@ -24,6 +27,7 @@ public class CliniqueManagementTest {
 
     }
 
+    //TEST CASE 1.1
     @Test
     public void givenFile_whenAddDoctorDelail_shouldReturnTrue() {
         try {
@@ -51,4 +55,31 @@ public class CliniqueManagementTest {
         }
     }
 
+    //TEST CASE 1.2
+    @Test
+    public void givenFile_whenAddPatientDelail_shouldReturnTrue() {
+        try {
+            Patient patient1 = new Patient("KUMAR PATIL", 1, 888888310299L, 20);
+            Patient patient2 = new Patient("AKASH PATIL", 2, 9566116980L, 32);
+            Patient patient3 = new Patient("PAWAN RAJUL", 3, 4545454545L, 43);
+            Patient patient4 = new Patient("NANDU AABA", 4, 1010101010L, 55);
+            Patient patient5 = new Patient("ANSAR SHEKH", 5, 5858585860L, 93);
+            CliniqueManagement.addInformation(patient1, patientfilePath);
+            CliniqueManagement.addInformation(patient2, patientfilePath);
+            CliniqueManagement.addInformation(patient3, patientfilePath);
+            CliniqueManagement.addInformation(patient4, patientfilePath);
+            CliniqueManagement.addInformation(patient5, patientfilePath);
+
+            ArrayList<Patient> data = objectMapper
+                    .readValue(new File(patientfilePath), new TypeReference<ArrayList<Patient>>() {
+                    });
+            Assert.assertEquals(patient1.getName(), data.get(0).getName());
+            Assert.assertEquals(patient2.getName(), data.get(1).getName());
+            Assert.assertEquals(patient3.getName(), data.get(2).getName());
+            Assert.assertEquals(patient4.getName(), data.get(3).getName());
+            Assert.assertEquals(patient5.getName(), data.get(4).getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
